@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Event Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Welcome to the JavaScript Playground 🎮</h1>
+
+  <!-- Interactive Button -->
+  <button id="magicBtn">Click Me!</button>
+
+  <!-- Keypress Display -->
+  <p id="keyOutput">Type something...</p>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab" data-tab="tab1">Tab 1</button>
+    <button class="tab" data-tab="tab2">Tab 2</button>
+    <div class="tab-content" id="tab1">Content for Tab 1</div>
+    <div class="tab-content" id="tab2" style="display: none;">Content for Tab 2</div>
+  </div>
+
+  <!-- Image Switcher -->
+  <div>
+    <img id="galleryImg" src="https://via.placeholder.com/200" alt="Gallery" />
+    <button id="changeImg">Next Image</button>
+  </div>
+
+  <!-- Form -->
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Name" required /><br />
+    <input type="email" id="email" placeholder="Email" required /><br />
+    <input type="password" id="password" placeholder="Password (min 8 chars)" required /><br />
+    <button type="submit">Submit</button>
+    <p id="formFeedback"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
